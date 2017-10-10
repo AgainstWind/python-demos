@@ -1,2 +1,12 @@
 #!/usr/bin/python
-print "Hello, World!";
+
+import sys
+
+
+print "------------------------"
+print sys.copyright
+print "------------------------"
+
+print "Hello, World!"
+
+
