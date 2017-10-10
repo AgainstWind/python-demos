@@ -59,3 +59,15 @@ module.print_func("test")
 
 from math import sin
 print sin(9)
+
+# !/usr/bin/python
+# -*- coding: UTF-8 -*-
+
+#str = raw_input("请输入：");
+#print "你输入的内容是: ", str
+
+fileObject = open('test.txt','r',0)
+print fileObject.read()
+print fileObject.tell()
+fileObject.close()
+
