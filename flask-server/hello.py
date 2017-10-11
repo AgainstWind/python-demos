@@ -1,9 +1,12 @@
 from flask import Flask
+import json
+
 app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Hello World!"
+    dictValue = {'key1':'value1','key2':'value2'}
+    return json.dumps(dictValue)
 
 if __name__ == '__main__':
     app.run()
