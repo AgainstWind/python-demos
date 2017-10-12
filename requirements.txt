@@ -2,3 +2,7 @@
 Flask
 
 matplotlib
+
+NumPy
+
+pandas
