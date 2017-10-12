@@ -71,3 +71,10 @@ print fileObject.read()
 print fileObject.tell()
 fileObject.close()
 
+with open("test.txt") as file2:
+    print  file2.read()
+
+try:
+    print 5/0
+except ZeroDivisionError:
+    print ('you can\'t divide by zero')
