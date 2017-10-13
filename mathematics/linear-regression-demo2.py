@@ -27,9 +27,16 @@ def loadData(fileName):
 
 
 data_array = loadData('iris.csv')
-# plt.plot(data_array[0],data_array[1],'',label='Sepal')
-# plt.plot(data_array[2],data_array[3],'',label='Petal')
-plt.scatter(data_array[0],data_array[1],color='green',marker='*',label='Sepal',alpha=0.6)
-plt.scatter(data_array[2],data_array[3],color='red',marker='x',label='Petal',alpha=0.7)
-plt.grid(True)
-plt.show()
+
+
+def draw_pic():
+    # plt.plot(data_array[0],data_array[1],'',label='Sepal')
+    # plt.plot(data_array[2],data_array[3],'',label='Petal')
+    plt.scatter(data_array[0],data_array[1],color='green',marker='*',label='Sepal',alpha=0.6)
+    plt.scatter(data_array[2],data_array[3],color='red',marker='x',label='Petal',alpha=0.7)
+    plt.grid(True)
+    plt.show()
+
+draw_pic()
+
+
