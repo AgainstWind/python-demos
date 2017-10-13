@@ -57,7 +57,7 @@ print f("world!")
 import module
 module.print_func("test")
 
-from math import sin
+from mathematics import sin
 print sin(9)
 
 # !/usr/bin/python
