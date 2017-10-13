@@ -2,11 +2,11 @@ from distutils.core import setup
 
 setup(
     name='python-demos',
-    version='',
-    packages=['chapter-1'],
-    url='',
+    version='0.1',
+    packages=['*'],
+    url='https://github.com/AgainstWind/python-demos',
     license='',
-    author='Administrator',
+    author='AgainstWind',
     author_email='',
     description=''
 )
