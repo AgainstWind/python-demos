@@ -13,5 +13,7 @@ def matrix_test():
     print a.A1
     print np.linalg.det(a) #hang lie shi
     print np.linalg.det(a.T)
+    print np.linalg.matrix_rank(a)
+    print a.I
 
 matrix_test()
