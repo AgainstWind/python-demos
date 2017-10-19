@@ -52,4 +52,25 @@ def printCurve():
     plt.show()
 
 #printThreeDimension()
-printCurve()
+#printCurve()
+
+
+
+def fun():
+    x = np.arange(-50,50,0.1)
+    y = np.arange(-50,50,0.1)
+    z = np.power(x,2)+np.sin(y)
+    return (x,y,z)
+
+def functionShow():
+    fig = plt.figure()
+    ax = Axes3D(fig)
+    X = np.arange(-10, 10, 0.1)
+    Y = np.arange(-10, 10, 0.1)
+    X, Y = np.meshgrid(X, Y)
+    Z = X ** 2 + Y ** 2
+    ax.plot_surface(X, Y, Z, rstride=1, cstride=1, cmap='rainbow')
+    plt.show()
+
+functionShow()
+
