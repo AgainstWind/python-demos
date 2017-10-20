@@ -65,8 +65,8 @@ def fun():
 def functionShow():
     fig = plt.figure()
     ax = Axes3D(fig)
-    X = np.arange(-10, 10, 0.2)
-    Y = np.arange(-10, 10, 0.2)
+    X = np.arange(-10, 10, 0.1)
+    Y = np.arange(-10, 10, 0.1)
     X, Y = np.meshgrid(X, Y)
     Z = np.cos(X) + np.sin(Y)* 2
     ax.plot_surface(X, Y, Z, rstride=1, cstride=1, cmap='rainbow')
