@@ -65,10 +65,11 @@ def fun():
 def functionShow():
     fig = plt.figure()
     ax = Axes3D(fig)
-    X = np.arange(-10, 10, 0.1)
-    Y = np.arange(-10, 10, 0.1)
+    X = np.arange(0, 3, 0.03)
+    Y = np.arange(0, 3, 0.03)
     X, Y = np.meshgrid(X, Y)
-    Z = np.cos(X) + np.sin(Y)* 2
+    #Z = np.cos(X) + np.sin(Y)* 2
+    Z = np.sin(X**X+Y**Y)/(X**X+Y**Y+1)
     ax.plot_surface(X, Y, Z, rstride=1, cstride=1, cmap='rainbow')
     plt.show()
 
